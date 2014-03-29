@@ -1,0 +1,29 @@
+{
+    "versionLabel": "1.0",
+    "uuid": "712c8b0b-4a7a-4bbf-9e26-8fc398deaf87",
+    "appKeys": {},
+    "longName": "hide_action_bar",
+    "versionCode": 1,
+    "capabilities": [
+        ""
+    ],
+    "shortName": "hide_action_bar",
+    "companyName": "pedrolane",
+    "watchapp": {
+        "watchface": false
+    },
+    "resources": {
+        "media": [
+            {
+                "type": "png",
+                "name": "PLUS",
+                "file": "images/action_icon_plus.png"
+            },
+            {
+                "type": "png",
+                "name": "MINUS",
+                "file": "images/action_icon_minus.png"
+            }
+        ]
+    }
+}
