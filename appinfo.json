@@ -1,14 +1,10 @@
 {
     "versionLabel": "1.0",
     "uuid": "712c8b0b-4a7a-4bbf-9e26-8fc398deaf87",
-    "appKeys": {},
-    "longName": "hide_action_bar",
+    "longName": "animate_actionbar",
     "versionCode": 1,
-    "capabilities": [
-        ""
-    ],
-    "shortName": "hide_action_bar",
-    "companyName": "pedrolane",
+    "shortName": "animate_actionbar",
+    "companyName": "Gregoire Sage",
     "watchapp": {
         "watchface": false
     },
