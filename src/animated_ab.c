@@ -43,9 +43,12 @@ static void move_actionbar(ActionBarLayer *action_bar, bool in){
 		animation_set_curve((Animation*) prop_animation, AnimationCurveEaseOut);
 	}
 
+	#ifdef PBL_PLATFORM_APLITE
 	animation_set_handlers((Animation*) prop_animation, (AnimationHandlers) {
 		.stopped = (AnimationStoppedHandler) animation_stopped,
   		}, NULL /* callback data */);
+
+  	#endif
 	animation_schedule((Animation*) prop_animation);
 }
 
