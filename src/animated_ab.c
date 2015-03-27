@@ -16,7 +16,14 @@ static void destroy_property_animation(PropertyAnimation **prop_animation) {
 }
 
 static void animation_stopped(Animation *animation, bool finished, void *data) {
+	
+	//Do anything you need here after the animation has stopped
+
+
+	//Only destroy animation on APLITE. Allowing this for BASALT will cause a crash
+	#ifdef PBL_PLATFORM_APLITE
 	destroy_property_animation(&prop_animation);
+	#endif
 }
 
 static void move_actionbar(ActionBarLayer *action_bar, bool in){
@@ -45,7 +52,8 @@ static void move_actionbar(ActionBarLayer *action_bar, bool in){
 
 	animation_set_handlers((Animation*) prop_animation, (AnimationHandlers) {
 		.stopped = (AnimationStoppedHandler) animation_stopped,
-  		}, NULL /* callback data */);
+  	}, NULL /* callback data */);
+
 	animation_schedule((Animation*) prop_animation);
 }
 
